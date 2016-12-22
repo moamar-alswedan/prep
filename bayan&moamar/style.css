@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+span{
+  font-size: 25px;
+  color:#5C2849;
+}
+h1, h2, a {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+
+
+.main {
+  text-align: center;
+  background: url("images/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+.main .next {
+  position: relative;
+  top: 160px;
+}
+
+.main h1 {
+  color: #5C2849;
+  margin: 0;
+  font-size: 100px;
+}
+
+.main p {
+  color: #FF733F;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+}
+
+.main .btn {
+  background-color: #5C2849;
+  color: #FF733F;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.accessories {
+  background-color: #5C2849;
+  padding: 25px 0 25px 70px;
+  text-align: center;
+
+}
+.accessories .item {
+  
+  padding: 0 0 0 80px;
+  text-align: center;
+
+}
+.access { 
+  padding: 5px 
+}
+
+.item {
+  float: left;
+  padding: 5px;
+  width: 28%;
+}
+
+
+.clearfloat {
+  clear: both;
+}
+
+
+.accessories .btn {
+  background-color: #eee;
+  color: #1c1c1c;
+  font-size: 18px;
+  padding: 8px 30px ;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.imgfooter{
+  background: url("images/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+
+a.btn:hover {
+  background:#FF733F;
+  color:#000;
+}
+
+
+
+
+/* pay */
+
+.main2 {
+  
+  text-align: center;
+  background: url("images/bg2.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;
+}
+
+#total{
+  width: 300px;
+  border-radius: 5px;
+  background-color: #5C2849;
+  color: #FF733F;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#final{
+  width: 600px;
+  border-radius: 5px;
+  background-color: #5C2849;
+  color: #FF733F;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+
+.main2 .btn {
+  background-color: #5C2849;
+  color: #FF733F;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  
+}
+
+.main2 p {
+  color: #FF733F;
+  font-size:18px;
+  padding: 50px 0 5px 0;
+}
+
