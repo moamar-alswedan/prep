@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+  <link href="css/main.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+
+</head>
+<body ng-app="myApp">
+
+  <div class="header">
+    <div class="container">
+      <img src="img/english-Logo.gif" width="400px" />
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Design Gallery</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="index.html">logos</a></li>
+            <li><a href="cards.html">cards</a></li>
+            <li><a href="posts.html">posts</a></li>
+            <li><a href="cover.html">book cover</a></li>
+            <li><a href="certificate.html">certificate</a></li>
+            <li><a href="card.html">business card</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="main" ng-controller="MainController3">
+  
+    <div class="container">
+      <div ng-repeat="product in products" class="col-md-6"> 
+        <div class="thumbnail"> 
+          <div class="hovereffect">
+            <img ng-src="{{ product.cover }}"> 
+            <div class="overlay">
+            </div>
+          </div>
+          <p class="title">{{ product.name }}</p>  
+          <p class="date">{{ product.info }}</p> 
+          <div class="rating">
+           <p class="likes" ng-click="plusOne($index)">+ {{ product.likes }} </p> 
+         </div>
+       </div> 
+     </div>
+
+   </div>
+ </div>
+
+ <div class="footer">
+
+  <h5>copy  right &copy Moamar Alswedan 2017</h5>
+
+</div>
+<!-- Modules -->
+<script src="js/app.js"></script>
+<!-- <script src="/bower_components/angular-route/angular-route.js"></script> -->
+<!-- Controllers -->
+<script src="js/controllers/MainController3.js"></script>
+</body>
+</html>
